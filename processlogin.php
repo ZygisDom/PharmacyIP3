@@ -23,15 +23,15 @@
     $result = mysqli_query($conn,"select * from staff where username = '$username' and password= '$password'") or die("Database query failed".mysqli_error());
     $row = mysqli_fetch_array($result);
     if ($row['username'] == $username && $row['password'] == $password){
-        echo "Login successful";
+        $_SESSION["username"] = $username;
+        $_SESSION["password"] = $password;
+        header("Location: /pharmacy/home.php");
     } else {
-        echo "Login failed.";
+        header("Location: /pharmacy/login.php");
     }
 
-    $_SESSION["username"] = $username;
-    $_SESSION["password"] = $password;
     mysqli_close($conn);
-    header("Location: /pharmacy/home.php");
+
     ?>
 </body>
 </html>
