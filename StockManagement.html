@@ -139,7 +139,7 @@
                             <option value="Lisinopril">Lisinopril</option>
                         </select>
                         <select class="custom-select" name="stock-box-margin40" id="value1">
-                            <option selected>Choose Quantity</option>
+                            <option selected value="0">Choose Quantity</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -159,7 +159,7 @@
                         <b>Order:</b>
                         <div class="btn-group">
                             <select class="custom-select" id="stock-box-margin40-1">
-                                <option selected>Choose Prescription</option>
+                                <option selected disabled>Choose Prescription</option>
                                 <option value="Amoxicillin">Amoxicillin</option>
                                 <option value="Cetirizine">Cetirizine</option>
                                 <option value="Clindamycin">Clindamycin</option>
@@ -172,7 +172,7 @@
                                 <option value="Lisinopril">Lisinopril</option>
                             </select>
                             <select class="custom-select" name="stock-box-margin40-3" id="value2">
-                                <option selected>Choose Quantity</option>
+                                <option selected value="0">Choose Quantity</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -188,8 +188,30 @@
                         </div>
                     </li>
                 </ul>
-                <button type="button" onclick="GetSelectedValue1()" class="mx-auto btn btn-primary" style="width: 200px;"  id="stock-box-margin40-4">Place the order</button>
-                <p class="text-center result-padding-top" id="result3">Total Cost Will be Shown Here</p>
+                <button type="button" onclick="GetSelectedValue1()" class="btn btn-primary mx-auto" style="width: 200px;" id="stock-box-margin40-4" data-toggle="modal" data-target="#exampleModal">
+                    Proceed to Checkout
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Place the Order</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-center result-padding-top" id="result3"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Order</button>
+                                <button type="button" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
     </body>

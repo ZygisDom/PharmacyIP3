@@ -650,6 +650,11 @@ button:focus {
 #add-new-patient button{
     padding: 7px 0;
 }
+
+#inputPatient{
+    padding-left: 5px;
+    width: 200px;
+}
 /** Patients list **/
 
 /** LOGIN **/
@@ -776,7 +781,7 @@ button:focus {
 }
 
 .result-padding-top{
-    padding-top: 30px;
+    padding-top: 16px;
 }
 
 #value1{
