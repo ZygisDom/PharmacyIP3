@@ -38,6 +38,50 @@
         opacity: 0;
     }
 }
+@media screen and (max-width: 992px) {
+    .personrow {
+        width: 500px !important;
+        height: 95px;
+        margin: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .patientfsize{
+        font-size: 0.9rem !important;
+    }
+    .label-blue {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .personrow {
+        width: 370px !important;
+        height: 95px;
+        margin: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .patientfsize{
+        font-size: 0.6rem !important;
+    }
+    .label-blue {
+        font-size: 0.9rem !important;
+    }
+}
+
 body {
     font-size: 0.9rem;
 }
@@ -598,6 +642,14 @@ button:focus {
     font-size: 1.2rem;
 }
 
+#add-new-patient{
+    width: 240px;
+    bottom: 0;
+}
+
+#add-new-patient button{
+    padding: 7px 0;
+}
 /** Patients list **/
 
 /** LOGIN **/
@@ -629,20 +681,25 @@ button:focus {
 .main-section {
     margin: 0 auto;
     padding: 0;
-
 }
 
 #loginbox {
-    background: rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: #fff;
     color: #fff;
-    padding: 0 18px;
     border-radius: 10px;
-    border: 2px solid #32ccff;
+    border: 2px solid #AFB4B7;
+
 }
 
-.user-image img {
-    height: 120px;
-    width: 120px;
+.upper-login-border  {
+    height: 30px;
+    width: 100%;
+    background: #211F54;
+    margin-bottom: 40px;
+    border: 0 solid #AFB4B7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .user-image {
@@ -661,11 +718,11 @@ button:focus {
 .form-group input {
     height: 42px;
     border-radius: 5px;
-    border: 2px solid #32ccff;
+    border: 2px solid #AFB4B7;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-left: 45px;
+    padding-left: 36px;
 }
 
 #formmargin1:before {
@@ -693,15 +750,69 @@ button:focus {
 .submit-button {
     width: 50%;
     margin: 15px 0 45px;
-    background-color: #32ccff;
+    background-color: #211F54;
     color: #fff;
     font-size: 19px;
     border: 2px solid #fff;
-    padding: 11px 15px;
+    padding: 7px 15px;
     border-radius: 7px;
 }
 
 .submit-button:hover{
-    background-color: #0284ff;
+    background-color: #00509b;
     color: #fff;
+}
+
+#login-details{
+    padding: 0 20px;
+}
+
+/*
+*  === STOCK MANAGEMENT ===
+*/
+
+#stock-box{
+    width:100%;
+}
+
+.result-padding-top{
+    padding-top: 30px;
+}
+
+#value1{
+    margin-left: 10px;
+}
+
+#value2{
+    margin-left: 10px;
+}
+
+#stock-box-margin40-2{
+    margin-left: 20px;
+}
+
+#stock-box-margin40-3{
+    margin-left: 20px;
+}
+
+#list-group-mtop{
+    margin-top:30px;
+}
+
+#help-margin-40{
+    margin-left: 40px;
+}
+
+#stock-but-margin1{
+    margin-left: 40px;
+}
+
+#stock-but-margin2{
+    margin-left: 40px;
+}
+
+#stock-box-margin40-4 {
+    margin-top:30px;
+    width: 50%;
+
 }
