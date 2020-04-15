@@ -38,6 +38,24 @@
         opacity: 0;
     }
 }
+
+@media (min-width: 1200px) {
+        #quantity-chart{
+            width: 900px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-box{
+        margin-top:-100px !important;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
 @media screen and (max-width: 992px) {
     .personrow {
         width: 500px !important;
@@ -51,12 +69,16 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
         -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
     }
     .patientfsize{
         font-size: 0.9rem !important;
     }
     .label-blue {
         font-size: 1.2rem !important;
+    }
+    .card-box{
+        margin-top:-180px
     }
 }
 
@@ -74,17 +96,27 @@
         -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
-    .patientfsize{
+
+    .patientfsize {
         font-size: 0.6rem !important;
     }
+
     .label-blue {
         font-size: 0.9rem !important;
     }
+
+    #container-calendar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #calendar .table td, .table th {
+        padding: .2rem !important;
+    }
+    .card-box{
+        margin-top:-180px
+    }
 }
 
-body {
-    font-size: 0.9rem;
-}
 .page-wrapper .sidebar-wrapper,
 .sidebar-wrapper .sidebar-brand > a,
 .sidebar-wrapper .sidebar-dropdown > a:after,
@@ -101,9 +133,11 @@ body {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 body {
     background-color: #B8BFCE !important;
+    font-size: 0.9rem;
 }
 /*----------------page-wrapper----------------*/
 
@@ -792,8 +826,12 @@ button:focus {
     margin-left: 10px;
 }
 
+#stock-box-margin40-1{
+    width:183px;
+}
+
 #stock-box-margin40-2{
-    margin-left: 20px;
+    width: 183px;
 }
 
 #stock-box-margin40-3{
@@ -819,5 +857,101 @@ button:focus {
 #stock-box-margin40-4 {
     margin-top:30px;
     width: 50%;
+}
 
+.b-margin-10 {
+    margin-right: 10px;
+}
+
+/** ==CHARTS==**/
+
+.main-chart{
+    margin-top: 25px;
+}
+
+/** == CALENDAR ==**/
+
+#calendar th:nth-of-type(7),td:nth-of-type(7) {color: blue;}
+#calendar th:nth-of-type(1),td:nth-of-type(1) {color: red;}
+
+#calendar th,td {
+
+}
+
+#calendar {
+    background: #fff;
+    border-radius: 25px;
+    border-top: 1px darkgrey;
+}
+
+
+/** == CALENDAR ==**/
+
+#map-container {
+    height: 100vh;
+}
+
+.btn-circle {
+    position: relative;
+    top: 0;
+    width: 43px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2C98DF;
+    border: none;
+    border-radius: 50% !important;
+}
+
+
+
+/** == MAP == **/
+
+.my-row {
+    height: 100%;
+}
+
+#map-box {
+    background: rgba(255, 255, 255, 0.38);
+    padding: 5px;
+}
+
+#map-box p {
+    font-size: 1rem;
+}
+
+.side-row {
+    border: 1px rgba(255, 255, 255, 0.78) solid;
+    min-width: 116px;
+}
+
+#pharmacy-map {
+    position: relative;
+    top: -80px;
+}
+
+#map-box {
+    position: relative;
+    top: -80px;
+}
+.map-container {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 60%; /* desired aspect ratio */
+    position: relative;
+}
+
+.googlemap {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.body-white {
+    background: #fff;
+}
+
+.no-border{
+    border: none !important;
 }

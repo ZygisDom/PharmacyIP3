@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:style="http://www.w3.org/1999/xhtml">
     <head>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
             <nav id="sidebar" class="sidebar-wrapper">
                 <div class="sidebar-content">
                     <div class="sidebar-brand">
-                        <a href="#">dashboard</a>
+                        <a href="Home.html">pharmacy</a>
                         <div id="close-sidebar">
                             <i class="fas fa-times"></i>
                         </div>
@@ -63,24 +63,24 @@
                             </li>
                             <li class="sidebar-dropdown">
                                 <a href="StockManagement.html">
+                                    <i class="fas fa-truck"></i>
+                                    <span>Order Supplies</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="Stock.html">
                                     <i class="fas fa-box-open"></i>
-                                    <span>Stock Management</span>
+                                    <span>Current Supplies</span>
                                 </a>
                             </li>
                             <li class="sidebar-dropdown">
-                                <a href="#">
-                                    <i class="far fa-gem"></i>
-                                    <span>Components</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-dropdown">
-                                <a href="#">
+                                <a href="Charts.html">
                                     <i class="fa fa-chart-line"></i>
                                     <span>Charts</span>
                                 </a>
                             </li>
                             <li class="sidebar-dropdown">
-                                <a href="#">
+                                <a href="Maps.html">
                                     <i class="fa fa-globe"></i>
                                     <span>Maps</span>
                                 </a>
@@ -95,7 +95,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="Calendar.html">
                                     <i class="fa fa-calendar"></i>
                                     <span>Calendar</span>
                                 </a>
@@ -123,9 +123,9 @@
         <div class="container vertical-center d-flex justify-content-center" id="stock-box">
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
-                    <b>Order:</b>
+                    <b class="b-margin-10">Order:</b>
                     <div class="btn-group">
-                        <select class="custom-select">
+                        <select class="custom-select" id="stock-box-margin40-2">
                             <option selected>Choose Prescription</option>
                             <option value="Amoxicillin">Amoxicillin</option>
                             <option value="Cetirizine">Cetirizine</option>
@@ -156,7 +156,7 @@
 
                 <ul class="list-group" id="list-group-mtop">
                     <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
-                        <b>Order:</b>
+                        <b class="b-margin-10">Order:</b>
                         <div class="btn-group">
                             <select class="custom-select" id="stock-box-margin40-1">
                                 <option selected disabled>Choose Prescription</option>
@@ -199,7 +199,7 @@
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Place the Order</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                    <span aria-hidden="true">x</span>
                                 </button>
                             </div>
                             <div class="modal-body">
@@ -207,7 +207,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Order</button>
-                                <button type="button" class="btn btn-secondary">Cancel</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                     </div>

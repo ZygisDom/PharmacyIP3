@@ -41,5 +41,34 @@ function GetSelectedValue1() {
 
     const g = h + (+result + +result2)*50;
     document.getElementById("result3").innerHTML = g;
-
 }
+
+function addData(chart, label, data) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(data);
+    });
+    chart.update();
+}
+
+function removeData(chart) {
+    chart.data.labels.pop();
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+    chart.update();
+}
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+    $('.popover').popover({
+        container: 'body'
+    })
+})
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
