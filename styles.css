@@ -444,43 +444,6 @@ body {
     overflow-x: hidden;
 }
 
-/*------scroll bar---------------------*/
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 7px;
-}
-::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-}
-::-webkit-scrollbar-thumb {
-    background: #154360;
-    border: 0px none #ffffff;
-    border-radius: 0px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #525965;
-}
-::-webkit-scrollbar-thumb:active {
-    background: #525965;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-    border: 0px none #ffffff;
-    border-radius: 50px;
-}
-::-webkit-scrollbar-track:hover {
-    background: transparent;
-}
-::-webkit-scrollbar-track:active {
-    background: transparent;
-}
-::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
-
 /*-----------------------------chiller-theme-------------------------------------------------*/
 
 .chiller-theme .sidebar-wrapper {
@@ -530,7 +493,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
     color: #16c7ff;
-    text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
+    text-shadow:0 0 10px rgba(22, 199, 255, 0.5);
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a i,
@@ -547,7 +510,7 @@ body {
 
 .chiller-theme .sidebar-footer {
     background: #1D1A47;
-    box-shadow: 0px -1px 5px #fff;
+    box-shadow: 0 -1px 5px #fff;
     border-top: 1px solid #464a52;
 }
 
@@ -961,4 +924,17 @@ button:focus {
 
 .no-border{
     border: none !important;
+}
+
+/**  CURRENT STOCK **/
+
+.card-margin{
+    margin-bottom: 21px;
+    background: #fff !important;
+    border: 1px solid #000 !important;
+    font-size: 1.1rem !important;
+}
+
+#card-container {
+    max-width: 600px;
 }
