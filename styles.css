@@ -40,8 +40,8 @@
 }
 
 @media (min-width: 1200px) {
-        #quantity-chart{
-            width: 900px !important;
+    #quantity-chart{
+        width: 900px !important;
     }
 }
 
@@ -640,7 +640,7 @@ button:focus {
 }
 
 #add-new-patient{
-    width: 240px;
+    width: 202px;
     bottom: 0;
 }
 
@@ -649,8 +649,45 @@ button:focus {
 }
 
 #inputPatient{
+    margin: 5px;
     padding-left: 5px;
+    width: 180px;
+}
+
+#dropdown-width{
     width: 200px;
+}
+
+#change-status{
+    margin-right: 7px;
+    width: 158px;
+    bottom: 0;
+}
+
+#change-status button{
+    padding: 7px 0;
+}
+
+#inputPatient, #changeStatus{
+    padding-left: 22px;
+}
+
+#changeStatus {
+    width: 130px;
+}
+
+#change-status-button, #add-new-patient-button {
+    padding: 10px 10px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#change-status-button button, #add-new-patient-button button {
+    background-color: #6D6D8B !important;
+}
+
+.btn-color {
+    background-color: #211F54 !important
 }
 /** Patients list **/
 
@@ -662,12 +699,12 @@ button:focus {
 }
 
 .vertical-center {
-     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-     min-height: 100vh; /* These two lines are counted as one :-)       */
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
 
-     display: flex;
-     align-items: center;
- }
+    display: flex;
+    align-items: center;
+}
 
 .light-100{
     border-top: 1px solid #d5d5d5;

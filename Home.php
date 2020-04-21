@@ -357,18 +357,32 @@ foreach($rows as $row)
         </div>
     </div>
 <div class="btn-group dropup float-right position-sticky" id="add-new-patient">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Add New Patient
-    </button>
-    <div class="dropdown-menu">
-        <form action="addPatient.php" method="post">
-            <div class="form-group">
-                <label for="inputPatient" class="mx-auto d-flex justify-content-center">Patient's Full Name</label>
-                <input type="name" class="form-control mx-auto d-flex justify-content-center" name="inputPatient" id="inputPatient" aria-describedby="emailHelp">
-            </div>
-            <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" style="width: 100px;">Submit</button>
-        </form>
-    </div>
+	<button type="button" class="btn btn-secondary dropdown-toggle btn-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Add New Patient
+	</button>
+	<div class="dropdown-menu" id="dropdown-width">
+		<form>
+			<div class="form-group">
+				<label for="inputPatient" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">Patient's Full Name</label>
+				<input type="name" class="form-control mx-auto d-flex justify-content-center"  id="inputPatient" aria-describedby="emailHelp">
+			</div>
+			<button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="add-new-patient-button">Submit</button>
+		</form>
+	</div>
+</div>
+<div class="btn-group dropup float-right position-sticky" id="change-status">
+	<button type="button" class="btn btn-secondary dropdown-toggle btn-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Change Status
+	</button>
+	<div class="dropdown-menu">
+		<form>
+			<div class="form-group">
+				<label for="inputPatient" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">Patient's ID</label>
+				<input type="name" class="form-control mx-auto d-flex justify-content-center" id="changeStatus" aria-describedby="emailHelp">
+			</div>
+			<button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="change-status-button">Change Status</button>
+		</form>
+	</div>
 </div>
 <!-- patients end -->
 </body>
