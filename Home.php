@@ -361,13 +361,13 @@ foreach($rows as $row)
 		Add New Patient
 	</button>
 	<div class="dropdown-menu" id="dropdown-width">
-		<form>
-			<div class="form-group">
-				<label for="inputPatient" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">Patient's Full Name</label>
-				<input type="name" class="form-control mx-auto d-flex justify-content-center"  id="inputPatient" aria-describedby="emailHelp">
-			</div>
-			<button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="add-new-patient-button">Submit</button>
-		</form>
+        <form action="addPatient.php" method="post">
+            <div class="form-group">
+                <label for="inputPatient" class="mx-auto d-flex justify-content-center">Patient's Full Name</label>
+                <input type="name" class="form-control mx-auto d-flex justify-content-center" name="inputPatient" id="inputPatient" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" style="width: 100px;">Submit</button>
+        </form>
 	</div>
 </div>
 <div class="btn-group dropup float-right position-sticky" id="change-status">
@@ -375,10 +375,10 @@ foreach($rows as $row)
 		Change Status
 	</button>
 	<div class="dropdown-menu">
-		<form>
+		<form action="changeStatus.php" method="post">
 			<div class="form-group">
 				<label for="inputPatient" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">Patient's ID</label>
-				<input type="name" class="form-control mx-auto d-flex justify-content-center" id="changeStatus" aria-describedby="emailHelp">
+				<input type="name" class="form-control mx-auto d-flex justify-content-center" name="patientID" id="patientID" aria-describedby="emailHelp">
 			</div>
 			<button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="change-status-button">Change Status</button>
 		</form>
