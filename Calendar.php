@@ -22,7 +22,7 @@
 session_start();
 ?>
 
-    <div class="page-wrapper chiller-theme toggled">
+    <div class="page-wrapper theme-wrapper toggled">
         <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
             <i class="fas fa-bars"></i>
         </a>
@@ -53,64 +53,64 @@ session_start();
                     </div>
                 </div>
                 <!-- sidebar-search  -->
-                <div class="sidebar-menu">
-                    <ul>
-                        <li class="header-menu">
-                            <span>General</span>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="Home.php">
-                                <i class="fa fa-tachometer-alt"></i>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="StockManagement.php">
-                                <i class="fas fa-truck"></i>
-                                <span>Order Supplies</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="Stock.php">
-                                <i class="fas fa-box-open"></i>
-                                <span>Current Supplies</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="Charts.php">
-                                <i class="fa fa-chart-line"></i>
-                                <span>Charts</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="Maps.php">
-                                <i class="fa fa-globe"></i>
-                                <span>Maps</span>
-                            </a>
-                        </li>
-                        <li class="header-menu">
-                            <span>Extra</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-book"></i>
-                                <span>Documentation</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Calendar.php">
-                                <i class="fa fa-calendar"></i>
-                                <span>Calendar</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-folder"></i>
-                                <span>Examples</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+	            <div class="sidebar-menu">
+		            <ul>
+			            <li class="header-menu">
+				            <span>General</span>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="Home.php">
+					            <i class="fa fa-tachometer-alt"></i>
+					            <span>Home</span>
+				            </a>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="StockManagement.php">
+					            <i class="fas fa-truck"></i>
+					            <span>Order Supplies</span>
+				            </a>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="Stock.php">
+					            <i class="fas fa-box-open"></i>
+					            <span>Current Supplies</span>
+				            </a>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="Charts.php">
+					            <i class="fa fa-chart-line"></i>
+					            <span>Charts</span>
+				            </a>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="Maps.php">
+					            <i class="fa fa-globe"></i>
+					            <span>Maps</span>
+				            </a>
+			            </li>
+			            <li class="sidebar-dropdown">
+				            <a href="Calendar.php">
+					            <i class="fa fa-calendar"></i>
+					            <span>Calendar</span>
+				            </a>
+			            </li>
+			            <li class="header-menu">
+				            <span>Extra</span>
+			            </li>
+			            <li>
+				            <a href="authors.php">
+					            <i class="fa fa-book"></i>
+					            <span>Project Authors</span>
+				            </a>
+			            </li>
+			            <li>
+				            <a href="#">
+					            <i class="fa fa-folder"></i>
+					            <span>Examples</span>
+				            </a>
+			            </li>
+		            </ul>
+	            </div>
                 <!-- sidebar-menu  -->
             </div>
             <!-- sidebar-content  -->

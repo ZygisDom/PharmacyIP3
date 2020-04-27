@@ -39,7 +39,7 @@ echo "window.location = 'home.php';";
 echo "</script>";
 ?>
 
-<div class="page-wrapper chiller-theme toggled">
+<div class="page-wrapper theme-wrapper toggled">
     <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
         <i class="fas fa-bars"></i>
     </a>
@@ -105,25 +105,25 @@ echo "</script>";
                             <span>Maps</span>
                         </a>
                     </li>
-                    <li class="header-menu">
-                        <span>Extra</span>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-book"></i>
-                            <span>Documentation</span>
-                        </a>
-                    </li>
-                    <li>
+                    <li class="sidebar-dropdown">
                         <a href="Calendar.php">
                             <i class="fa fa-calendar"></i>
                             <span>Calendar</span>
                         </a>
                     </li>
+                    <li class="header-menu">
+                        <span>Extra</span>
+                    </li>
                     <li>
-                        <a href="#">
+                        <a href="authors.php">
+                            <i class="fa fa-book"></i>
+                            <span>Project Authors</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="overview.php">
                             <i class="fa fa-folder"></i>
-                            <span>Examples</span>
+                            <span>Overview</span>
                         </a>
                     </li>
                 </ul>

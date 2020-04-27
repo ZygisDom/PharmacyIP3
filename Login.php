@@ -13,33 +13,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pharmacy | Home</title>
+    <title>Pharmacy | Log In</title>
 </head>
-    <body>
+<body>
     <?php
         session_start();
         $_SESSION["username"] = "";
         $_SESSION["password"] = "";
     ?>
-        <div class="modal-dialog text-center vertical-center">
-            <div class="col-9 main-section">
-                <div class="modal-content" id="loginbox">
-                    <div class="user-image">
-                        <img src="images/face.png"/>
-                    </div>
-                    <div class="col-12 form-input">
-                        <form action="processlogin.php" method="POST">
-                            <div class="form-group" id="formmargin1">
-                                <input type="text" name ="username" id="username" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-group" id="formmargin2">
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
-                            </div>
-                            <button type="submit" class="submit-button">Login</button>
-                        </form>
-                    </div>
+    <div class="modal-dialog text-center vertical-center">
+        <div class="col-9 main-section">
+            <div class="modal-content" id="loginbox">
+                <div class="user-image">
+                    <img src="images/face.png"/>
+                </div>
+                <div class="col-12 form-input">
+                    <form action="processlogin.php" method="POST">
+                        <div class="form-group" id="formmargin1">
+                            <input type="text" name ="username" id="username" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group" id="formmargin2">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="submit" class="submit-button">Login</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

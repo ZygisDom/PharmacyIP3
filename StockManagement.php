@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:style="http://www.w3.org/1999/xhtml">
-    <head>
+<head>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -26,14 +26,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Pharmacy | Order Supplies</title>
-    </head>
-    <body>
+</head>
+<body>
 
     <?php
     session_start();
     ?>
 
-        <div class="page-wrapper chiller-theme toggled">
+        <div class="page-wrapper theme-wrapper toggled">
             <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
                 <i class="fas fa-bars"></i>
             </a>
@@ -99,25 +99,25 @@
                                     <span>Maps</span>
                                 </a>
                             </li>
-                            <li class="header-menu">
-                                <span>Extra</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-book"></i>
-                                    <span>Documentation</span>
-                                </a>
-                            </li>
-                            <li>
+                            <li class="sidebar-dropdown">
                                 <a href="Calendar.php">
                                     <i class="fa fa-calendar"></i>
                                     <span>Calendar</span>
                                 </a>
                             </li>
+                            <li class="header-menu">
+                                <span>Extra</span>
+                            </li>
                             <li>
-                                <a href="#">
+                                <a href="authors.php">
+                                    <i class="fa fa-book"></i>
+                                    <span>Project Authors</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="overview.php">
                                     <i class="fa fa-folder"></i>
-                                    <span>Examples</span>
+                                    <span>Overview</span>
                                 </a>
                             </li>
                         </ul>
@@ -230,5 +230,5 @@
             </ul>
         </div>
     </form>
-    </body>
+</body>
 </html>
