@@ -7,6 +7,9 @@ $conn = mysqli_connect("localhost", "root", "", "pharmacydb");
 mysqli_select_db($conn, "pharmacydb");
 
 $patientID = $_POST['patientID'];
+$patientID = stripcslashes($patientID);
+$patientID = mysqli_real_escape_string($conn, $patientID);
+
 $sql = mysqli_query($conn,"SELECT * FROM `patients` WHERE `ID_Patient` = '$patientID'");
 $row = mysqli_fetch_array($sql);
 if ($row['Status'] == "Prescription ready"){

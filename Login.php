@@ -18,6 +18,7 @@
 <body>
     <?php
         session_start();
+        $_SESSION["logged_in"] = 0;
         $_SESSION["username"] = "";
         $_SESSION["password"] = "";
     ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2020 at 10:59 PM
+-- Generation Time: Apr 28, 2020 at 01:24 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.14
 
@@ -39,7 +39,7 @@ CREATE TABLE `medicine` (
 --
 
 INSERT INTO `medicine` (`ID_Medicine`, `Name`, `Qty`) VALUES
-(1, 'Amoxicillian', 32),
+(1, 'Amoxicillin', 32),
 (2, 'Cetirizine', 95),
 (3, 'Clindamycin', 64),
 (4, 'Clopidogrel', 96),
@@ -71,11 +71,11 @@ CREATE TABLE `patients` (
 INSERT INTO `patients` (`ID_Patient`, `Name`, `Middlename`, `Surname`, `Status`) VALUES
 (1, 'John', '', 'Smith', 'Prescription ready'),
 (2, 'Simon', 'James', 'Wright', 'Prescription ready'),
-(5, 'Liam', '', 'Johnstone', 'Prescription ready'),
+(5, 'Liam', '', 'Johnstone', 'Prescription in progress'),
 (7, 'Keith', '', 'Richards', 'Prescription ready'),
 (8, 'Fiona', 'Rose', 'Parker', 'Prescription ready'),
-(11, 'Laura', '', 'Stevenson', 'Prescription ready'),
-(12, 'Michael', '', 'Osborne', 'Prescription ready'),
+(11, 'Laura', '', 'Stevenson', 'Prescription in progress'),
+(12, 'Michael', '', 'Osborne', 'Prescription in progress'),
 (15, 'Katie', '', 'White', 'Prescription ready'),
 (16, 'James', 'Andrew', 'Murray', 'Prescription ready');
 

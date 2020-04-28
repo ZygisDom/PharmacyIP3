@@ -16,6 +16,15 @@
 	<title>Pharmacy | Overview</title>
 </head>
 <body>
+
+<?php
+session_start();
+
+if ($_SESSION['logged_in'] == 0){
+    header('Location: Login.php');
+}
+?>
+
 	<div class="page-wrapper theme-wrapper toggled">
 		<a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
 			<i class="fas fa-bars"></i>
@@ -30,9 +39,7 @@
 				</div>
 				<div class="sidebar-header">
 					<div class="user-info">
-	                  <span class="user-name"><i class="fas fa-user"></i> &nbsp;&nbsp; &nbsp;&nbsp; John
-	                    <strong>Smith</strong>
-	                  </span>
+                        <span class="user-name"><i class="fas fa-user"></i> &nbsp;&nbsp; &nbsp;&nbsp; <?php echo $_SESSION["username"]; ?></span>
 					</div>
 				</div>
 				<!-- sidebar-header  -->
@@ -111,9 +118,9 @@
 			</div>
 			<!-- sidebar-content  -->
 			<div class="sidebar-footer">
-				<a href="#">
-					<i class="fa fa-power-off"></i>
-				</a>
+                <a href="Login.php">
+                    <i class="fa fa-power-off"></i>
+                </a>
 			</div>
 		</nav>
 		<!-- sidebar-wrapper  -->

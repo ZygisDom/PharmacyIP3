@@ -21,6 +21,10 @@
 <?php
 session_start();
 
+if ($_SESSION['logged_in'] == 0){
+    header('Location: Login.php');
+}
+
 // Establishing connection to the database
 $conn = mysqli_connect("localhost", "root", "", "pharmacydb");
 mysqli_select_db($conn, "pharmacydb");

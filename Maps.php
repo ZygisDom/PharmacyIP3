@@ -21,6 +21,10 @@
 
 <?php
 session_start();
+
+if ($_SESSION['logged_in'] == 0){
+    header('Location: Login.php');
+}
 ?>
 
     <div class="page-wrapper theme-wrapper toggled">

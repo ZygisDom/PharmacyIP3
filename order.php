@@ -11,6 +11,7 @@ $conn = mysqli_connect("localhost", "root", "", "pharmacydb");
 mysqli_select_db($conn, "pharmacydb");
 
 $sql = mysqli_query($conn, "UPDATE `medicine` SET `Qty`= Qty + 3 WHERE ID_Medicine = 1") or die("Database query failed".mysqli_error());
+$sql1 = mysqli_query($conn, "UPDATE `medicine` SET `Qty`= Qty + 5 WHERE ID_Medicine = 4") or die("Database query failed".mysqli_error());
 	//UPDATE medicine SET Qty=Qty + $drug1value WHERE Name = $drug1
 echo "Order has been confirmed. Stock will now be updated.";
 ?>

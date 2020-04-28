@@ -23,11 +23,18 @@
 // Start a new session
 session_start();
 
+if ($_SESSION['logged_in'] == 0) {
+    header('Location: login.php');
+}
+
 // Establishing connection to the database
 $conn = mysqli_connect("localhost", "root", "", "pharmacydb");
 mysqli_select_db($conn, "pharmacydb");
 
 $fullname = $_POST['inputPatient'];
+$fullname = stripcslashes($fullname);
+$fullname = mysqli_real_escape_string($conn, $fullname);
+
 $fullnamesplit = explode(" ", $fullname);
 $Name = $fullnamesplit[0];
 $Surname = $fullnamesplit[1];
